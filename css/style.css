@@ -1,113 +1,114 @@
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-html, 
+html,
 body {
-    margin: 0;
-    padding: 0;
-    
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, p{
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #555;
-    background: whitesmoke;
+  font-family: "Raleway", sans-serif;
+  color: #555;
+  background: whitesmoke;
 }
-
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    min-height: 25px;
-    font-weight: 900;
-    margin: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  min-height: 25px;
+  font-weight: 900;
+  margin: 1.5em;
 }
 
 nav div {
-    text-transform: uppercase;
-    display:inline-block;
-    margin: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
 }
 
 nav span {
-    padding-left: 2em;
+  padding-left: 2em;
 }
 
 .hero {
-   background-image: url('./images/article-image.png');
-   background-size: cover;
-   color:whitesmoke;
-   margin: 0;
-   padding: 2em;
-   min-height: 350px;
-   display:flex;
-   flex-direction: column;
-   justify-content: flex-end;
+  background-image: url("../images/article-image.png");
+  background-size: cover;
+  color: whitesmoke;
+  margin: 0;
+  padding: 2em;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hero h1 {
-    max-width: 20ch;
-    padding-top: 0.25em;
+  max-width: 20ch;
+  padding-top: 0.25em;
 }
 
 .hero p {
-    padding-top: 1em;
-    line-height: 1.5;
-    max-width: 50ch;
-    color: gainsboro;
+  padding-top: 1em;
+  line-height: 1.5;
+  max-width: 50ch;
+  color: gainsboro;
 }
 
 .blog-list {
-    display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr))  ;
-    grid-gap: 1.5em;
-    margin: 3em 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1.5em;
+  margin: 3em 1em;
 }
 
 .blog-list h3 {
-    padding: 0.4em 0 0.4em ;
-    font-size: 1.5em;
-    font-weight: 900;
-    color: #222;
+  padding: 0.4em 0 0.4em;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #222;
 }
 
 .date {
-    color: grey;
-    padding-top: 1em;
+  color: grey;
+  padding-top: 1em;
 }
 
 .blog-preview-text {
-    color: grey;
-    padding-top: 0.25em;
-    padding-bottom: 1em;
+  color: grey;
+  padding-top: 0.25em;
+  padding-bottom: 1em;
 }
 
 .card-img {
-    width: 100%;
-    min-height: 200px;
-    margin-bottom: 1rem;
-    border-radius: 15px;
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 15px;
 }
 
 @media (min-width: 600px) {
-    
-    .hero {
-        min-height: 450px;
-    }
-    
-    .blog-list {
-        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr))  ;
-        margin: 3em 4em;
-    }
-    
-    .blog-preview-text {
-        padding-bottom: 2em;
-    }
-    
+  .hero {
+    min-height: 450px;
+  }
+
+  .blog-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 3em 4em;
+  }
+
+  .blog-preview-text {
+    padding-bottom: 2em;
+  }
 }
